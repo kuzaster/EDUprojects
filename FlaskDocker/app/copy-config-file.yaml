@@ -1,0 +1,9 @@
+- image_name: jmalloc/echo-server
+  name: jmalloc-echo-server
+  options:
+    detach: true
+    name: jmalloc-echo-server
+    ports:
+      8080: 7070
+  port: 8080
+  public_url: http://localhost:7070

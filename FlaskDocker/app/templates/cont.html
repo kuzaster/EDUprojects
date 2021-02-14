@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Container: {{ cont.name }}!</h1>
+    <table>
+        <tr valign="top">
+            <td>Name</td>
+            <td>{{ cont.name }}</td>
+        </tr>
+        <tr>
+            <td>Options</td>
+            <td>{{ cont.options }}</td>
+        </tr>
+        <tr>
+            <td>Image name</td>
+            <td>{{ cont.image_name }}</td>
+        </tr>
+        <tr>
+            <td>Port</td>
+            <td>{{ cont.port }}</td>
+        </tr>
+        <tr>
+            <td>Public URL</td>
+            <td><a href="{{ cont.public_url }}" target="_blank">{{ cont.public_url }}</a></td>
+        </tr>
+    </table>
+        <form action="" method="post" novalidate>
+            {{ form.hidden_tag() }}
+            <p>{{ form.edit() }}</p>
+        </form>
+        <form action="" method="post" onSubmit="return confirm('Are you sure?')" novalidate>
+            {{ form.hidden_tag() }}
+            <p>{{ form.remove() }}</p>
+        </form>
+{% endblock %}

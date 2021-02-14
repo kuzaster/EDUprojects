@@ -1,0 +1,39 @@
+[
+{
+    "model": "school.homework",
+    "pk": 1,
+    "fields": {
+        "text": "Final HW!",
+        "deadline": "3 00:00:00",
+        "created": "2020-12-28T09:03:44.606Z"
+    }
+},
+{
+    "model": "school.homeworkresult",
+    "pk": 1,
+    "fields": {
+        "homework": "Final HW!",
+        "author": 1,
+        "solution": "Hope fine",
+        "created": "2020-12-28T09:03:44.606Z"
+    }
+},
+{
+    "model": "school.student",
+    "pk": 1,
+    "fields": {
+        "first_name": "Tim",
+        "last_name": "Nekuk",
+        "age": 26
+    }
+},
+{
+    "model": "school.teacher",
+    "pk": 1,
+    "fields": {
+        "first_name": "Bob",
+        "last_name": "Kelso",
+        "homework_done": 1
+    }
+}
+]

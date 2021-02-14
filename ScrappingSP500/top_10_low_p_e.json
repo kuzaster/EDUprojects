@@ -1,0 +1,52 @@
+[
+    {
+        "code": "BA",
+        "name": "Boeing Co.",
+        "P/E": "-95.58"
+    },
+    {
+        "code": "HES",
+        "name": "Hess Corp",
+        "P/E": "-69.69"
+    },
+    {
+        "code": "DXC",
+        "name": "DXC Technology",
+        "P/E": "2.58"
+    },
+    {
+        "code": "UNM",
+        "name": "Unum Group",
+        "P/E": "5.28"
+    },
+    {
+        "code": "AAL",
+        "name": "American Airlines Inc",
+        "P/E": "5.84"
+    },
+    {
+        "code": "HPE",
+        "name": "Hewlett Packard Enterprise Co.",
+        "P/E": "6.23"
+    },
+    {
+        "code": "IVZ",
+        "name": "Invesco Ltd",
+        "P/E": "7.08"
+    },
+    {
+        "code": "UAL",
+        "name": "United Airlines Holdings Inc Registered Shs",
+        "P/E": "7.31"
+    },
+    {
+        "code": "GM",
+        "name": "General Motors",
+        "P/E": "7.59"
+    },
+    {
+        "code": "BEN",
+        "name": "Franklin Resources Inc.",
+        "P/E": "7.73"
+    }
+]

@@ -1,0 +1,52 @@
+[
+    {
+        "code": "TSLA",
+        "name": "Tesla",
+        "potential profit": "891.41%"
+    },
+    {
+        "code": "APA",
+        "name": "Apache Corp.",
+        "potential profit": "786.35%"
+    },
+    {
+        "code": "NCLH",
+        "name": "Norwegian Cruise Line Ltd",
+        "potential profit": "750.36%"
+    },
+    {
+        "code": "RCL",
+        "name": "Royal Caribbean Cruises Ltd.",
+        "potential profit": "602.08%"
+    },
+    {
+        "code": "CCL",
+        "name": "Carnival Corp & plc paired",
+        "potential profit": "565.83%"
+    },
+    {
+        "code": "OKE",
+        "name": "ONEOK Inc (New)",
+        "potential profit": "545.31%"
+    },
+    {
+        "code": "HAL",
+        "name": "Halliburton Co.",
+        "potential profit": "499.29%"
+    },
+    {
+        "code": "MGM",
+        "name": "MGM Resorts International",
+        "potential profit": "486.54%"
+    },
+    {
+        "code": "DVN",
+        "name": "Devon Energy Corp.",
+        "potential profit": "473.83%"
+    },
+    {
+        "code": "OXY",
+        "name": "Occidental Petroleum Corp.",
+        "potential profit": "457.68%"
+    }
+]

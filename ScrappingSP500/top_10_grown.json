@@ -1,0 +1,52 @@
+[
+    {
+        "code": "TSLA",
+        "name": "Tesla",
+        "growth": "663.73%"
+    },
+    {
+        "code": "PYPL",
+        "name": "PayPal Inc",
+        "growth": "124.19%"
+    },
+    {
+        "code": "NVDA",
+        "name": "NVIDIA Corp.",
+        "growth": "122.40%"
+    },
+    {
+        "code": "AMD",
+        "name": "AMD (Advanced Micro Devices)  Inc.",
+        "growth": "104.93%"
+    },
+    {
+        "code": "ALB",
+        "name": "Albemarle Corp.",
+        "growth": "97.44%"
+    },
+    {
+        "code": "LB",
+        "name": "L Brands Inc",
+        "growth": "93.54%"
+    },
+    {
+        "code": "ALGN",
+        "name": "Align Technology Inc.",
+        "growth": "92.92%"
+    },
+    {
+        "code": "CDNS",
+        "name": "Cadence Design Systems Inc.",
+        "growth": "91.57%"
+    },
+    {
+        "code": "IDXX",
+        "name": "IDEXX Laboratories",
+        "growth": "89.09%"
+    },
+    {
+        "code": "AAPL",
+        "name": "Apple Inc.",
+        "growth": "85.75%"
+    }
+]
