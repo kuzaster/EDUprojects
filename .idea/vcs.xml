@@ -3,6 +3,7 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/DemoDocker" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/FlaskBlogHeroku" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/FlaskMicroblog" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/MyDemoDocker" vcs="Git" />
   </component>

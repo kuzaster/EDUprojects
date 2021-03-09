@@ -1,0 +1,3 @@
+[submodule "FlaskBlogHeroku"]
+	path = FlaskBlogHeroku
+	url = https://github.com/kuzaster/FlaskMicroblog
