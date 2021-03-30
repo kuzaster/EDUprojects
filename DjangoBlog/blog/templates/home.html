@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<br/>
+<h1>Posts</h1>
+
+<br/>
+<ul class="nav nav-pills">
+    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+        Sorting by
+        {% if "published" in request.GET.ordering %}publication date
+        {% else %}author first name
+        {% endif %}
+    </a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="/?ordering=-published">By date down</a></li>
+      <li><a class="dropdown-item" href="/?ordering=published">By date up</a></li>
+      <li><a class="dropdown-item" href="/?ordering=-author__first_name">By author down</a></li>
+      <li><a class="dropdown-item" href="/?ordering=author__first_name">By author up</a></li>
+    </ul>
+
+</ul>
+
+<ul>
+{% for post in object_list %}
+    <li><a href="{% url 'detail-post' post.pk %}">{{ post.title }}</a> | by {{ post.author.first_name }}
+        {{ post.author.last_name }}<br>
+        <small>{{ post.published }}</small><br/>
+        {{ post.shot_body }}</li>
+{% endfor %}
+</ul>
+
+{% endblock %}

@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}{{ post.title }}{% endblock %}
+
+{% block content %}
+
+<br/>
+<h2>{{ post.title }}</h2>
+
+<small>
+    {% if user.is_authenticated %}
+        {% if user.id == post.author.id %}
+            (<a href="{% url 'edit-post' post.pk %}">Edit</a>)
+            (<a href="{% url 'delete-post' post.pk %}">Delete</a>)<br/>
+        {% endif %}
+    {% endif %}
+    By: <a href="{% url 'profile-page' post.author.id %}">{{ post.author.first_name }} {{ post.author.last_name }}</a>
+    <br/>
+    Published: {{ post.published }}<br/>
+</small>
+<hr>
+{{ post.body }}
+
+<br/>
+<hr>
+
+<h2>Comments...</h2>
+
+{% if not post.comments.all %}
+    No Comments Yet...
+    {% if user.id != post.author.id %}
+        <a href="{% url 'add-comment' post.pk %}">Add one</a>
+    {% endif %}
+{% else %}
+    {% if user.id != post.author.id %}
+        <a href="{% url 'add-comment' post.pk %}">Add comment</a>
+        <br/><br/>
+    {% endif %}
+{% for comment in post.comments.all %}
+        <strong>
+            {{ comment.name }} -
+            {{ comment.date_added }}
+        </strong>
+        <br/>
+        {{ comment.body }}
+        <br/>
+    {% endfor %}
+{% endif %}
+<hr>
+
+{% endblock %}
+

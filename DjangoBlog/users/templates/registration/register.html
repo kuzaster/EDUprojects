@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}Register{% endblock %}
+{% block content %}
+
+
+<h1>Register...</h1>
+<br/>
+
+{% if not user.is_authenticated %}
+    <div class="form-group">
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button class="btn btn-info">Register</button>
+        </form>
+    </div>
+{% else %}
+    You've already logged, please <a href="{% url 'logout' %}">logout</a> at first
+{% endif %}
+
+{% endblock %}

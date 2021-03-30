@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<br/>
+<br/>
+
+
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+{% if user_page.avatar %}
+    <img src="{{ user_page.avatar.url }}" width=200 height=200  alt="...">
+{% else %}
+    <img src="{% static 'blog/images/default_avatar.png' %}" width=200 height=200 class="rounded-circle" alt="...">
+{% endif %}
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{ user_page.first_name }} {{ user_page.last_name }}</h5>
+        <p class="card-text">Mobile: {{ user_page.mobile }}</p>
+        <p class="card-text">Skype: {{ user_page.skype }}</p>
+        {% if user_page.id == user.id %}
+          <small class="card-text"><a href="{% url 'edit-profile' user_page.pk %}">Edit your profile</a></small>
+        {% endif %}
+<!--        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>-->
+      </div>
+    </div>
+  </div>
+</div>
+<br/>
+<h3>{{ user_page.first_name }}'s posts</h3>
+
+{% if user_page.blog_posts.all %}
+    {% for post in user_page.blog_posts.all %}
+        <li><a href="{% url 'detail-post' post.pk %}">{{ post.title }}</a>
+        <br>
+        <small>{{ post.published }}</small><br/>
+        {{ post.shot_body }}</li>
+    {% endfor %}
+{% else %}
+    <p>You haven't got posts yet. <a href="{% url 'add-post' %}">Create it!</a></p>
+{% endif %}
+
+{% endblock %}

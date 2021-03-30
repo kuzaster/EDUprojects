@@ -1,0 +1,152 @@
+[
+  {
+    "model": "blog.myuser",
+    "pk": 1,
+    "fields": {
+        "last_login": "2021-03-19T14:25:47.415Z",
+        "first_name": "Name_1",
+        "last_name": "Last_1",
+        "email": "name_1@name.ru",
+        "avatar": "",
+        "mobile": 111,
+        "skype": "name_1_skype",
+        "is_active": true,
+        "is_admin": false
+    }
+},
+{
+    "model": "blog.myuser",
+    "pk": 2,
+    "fields": {
+        "last_login": "2021-03-17T05:58:00.948Z",
+        "first_name": "Name_2",
+        "last_name": "Last_2",
+        "email": "name_2@name.ru",
+        "avatar": "",
+        "mobile": 222,
+        "skype": "name_2_skype",
+        "is_active": true,
+        "is_admin": false
+    }
+},
+{
+    "model": "blog.myuser",
+    "pk": 3,
+    "fields": {
+        "last_login": "2021-03-19T13:57:34.784Z",
+        "first_name": "Name_3",
+        "last_name": "Last_3",
+        "email": "name_3@name.ru",
+        "avatar": "",
+        "mobile": 333,
+        "skype": "name_3_skype",
+        "is_active": true,
+        "is_admin": false
+    }
+},
+{
+    "model": "blog.post",
+    "pk": 1,
+    "fields": {
+        "title": "User_1 post!",
+        "author": 1,
+        "shot_body": "First User_1 post!",
+        "body": "Body of the first User-1 post!",
+        "published": "2021-03-15T16:46:05.407Z"
+    }
+},
+{
+    "model": "blog.post",
+    "pk": 2,
+    "fields": {
+        "title": "User_1 post too!",
+        "author": 1,
+        "shot_body": "Second User_1 post!",
+        "body": "Body of the second User-1 post!",
+        "published": "2021-03-15T17:03:39.144Z"
+    }
+},
+{
+    "model": "blog.post",
+    "pk": 3,
+    "fields": {
+        "title": "User_2 post!",
+        "author": 2,
+        "shot_body": "First User_1 post!",
+        "body": "Body of the first User-2 post!",
+        "published": "2021-03-16T07:14:26.530Z"
+    }
+},
+{
+    "model": "blog.post",
+    "pk": 4,
+    "fields": {
+        "title": "User_2 post too!",
+        "author": 2,
+        "shot_body": "Second User_2 post!",
+        "body": "Body of the second User-2 post!",
+        "published": "2021-03-17T05:56:06.876Z"
+    }
+},
+{
+    "model": "blog.post",
+    "pk": 5,
+    "fields": {
+        "title": "User_3 post!",
+        "author": 3,
+        "shot_body": "The only User_3 post!",
+        "body": "Body of the only User-3 post!",
+        "published": "2021-03-16T07:14:26.530Z"
+    }
+},
+{
+    "model": "blog.comment",
+    "pk": 1,
+    "fields": {
+        "post": 1,
+        "name": "Any_name",
+        "body": "The first comment to the first user!",
+        "date_added": "2021-03-16T13:48:23.766Z"
+    }
+},
+{
+    "model": "blog.comment",
+    "pk": 2,
+    "fields": {
+        "post": 1,
+        "name": "Another_name",
+        "body": "The second comment to the first user!",
+        "date_added": "2021-03-16T14:04:10.067Z"
+    }
+},
+{
+    "model": "blog.comment",
+    "pk": 3,
+    "fields": {
+        "post": 3,
+        "name": "New_name",
+        "body": "The first comment to the second user!",
+        "date_added": "2021-03-16T14:48:34.222Z"
+    }
+},
+{
+    "model": "blog.comment",
+    "pk": 4,
+    "fields": {
+        "post": 3,
+        "name": "Name_name",
+        "body": "The second comment to the second user!",
+        "date_added": "2021-03-16T14:56:19.659Z"
+    }
+},
+{
+    "model": "blog.comment",
+    "pk": 5,
+    "fields": {
+        "post": 5,
+        "name": "Any_name",
+        "body": "The first comment to the third user",
+        "date_added": "2021-03-17T06:05:28.776Z"
+    }
+}
+]
